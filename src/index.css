@@ -48,7 +48,7 @@ html {
   --border-radius-2: 5px;
   --border-radius-3: 10px;
 
-  --transition: all 0.6s ease-in-out;
+  --transition: all 0.3s ease-in-out;
   --letter-spacing-1: 1px;
   --letter-spacing-2: 2px;
 }

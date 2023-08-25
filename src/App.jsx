@@ -50,12 +50,12 @@ function App() {
         })}
       </div>
       <div className="btn-container">
-        <button onClick={handlePageStart} className="prev-btn--start">
+        <div onClick={handlePageStart} className="prev-btn--start">
           <FiChevronsLeft />
-        </button>
-        <button onClick={handlePrevPage} className="prev-btn">
+        </div>
+        <div onClick={handlePrevPage} className="prev-btn">
           <FiChevronLeft />
-        </button>
+        </div>
         {data.slice(0, 7).map((_, index) => {
           return (
             <button
@@ -67,12 +67,12 @@ function App() {
             </button>
           );
         })}
-        <button onClick={handleNextPage} className="next-btn">
+        <div onClick={handleNextPage} className="next-btn">
           <FiChevronRight />
-        </button>
-        <button onClick={handlePageEnd} className="next-btn--end">
+        </div>
+        <div onClick={handlePageEnd} className="next-btn--end">
           <FiChevronsRight />
-        </button>
+        </div>
       </div>
     </main>
   );

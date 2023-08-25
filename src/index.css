@@ -319,6 +319,8 @@ main {
 .next-btn--end {
   background-color: transparent;
   border-color: transparent;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   color: var(--primary-600);
@@ -326,10 +328,12 @@ main {
   cursor: pointer;
 }
 
-.prev-btn--start {
-  justify-content: flex-start;
+.prev-btn--start,
+.prev-btn {
+  justify-content: flex-end;
 }
-.next-btn--end {
+.next-btn--end,
+.next-btn {
   justify-content: flex-end;
 }
 @media (min-width: 574px) {

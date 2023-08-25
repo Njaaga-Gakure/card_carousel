@@ -343,8 +343,8 @@ main {
   .card:hover {
     transform: translateY(-20px);
   }
-  .card:hover ~ .card {
-    left: 50px;
+  .card:hover + .card {
+    left: 30px;
   }
   .card:not(:first-child) {
     margin-top: 0;

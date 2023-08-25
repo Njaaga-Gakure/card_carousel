@@ -34,6 +34,12 @@ export const AppProvider = ({ children }) => {
       }
     });
   };
+  const handlePageStart = () => {
+    setPage(0);
+  };
+  const handlePageEnd = () => {
+    setPage(6);
+  };
   return (
     <AppContext.Provider
       value={{
@@ -45,6 +51,8 @@ export const AppProvider = ({ children }) => {
         handlePageChange,
         handlePrevPage,
         handleNextPage,
+        handlePageStart,
+        handlePageEnd,
       }}
     >
       {children}

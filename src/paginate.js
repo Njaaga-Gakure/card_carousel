@@ -1,5 +1,5 @@
 const paginate = (data) => {
-  const pageSize = 3;
+  const pageSize = 4;
   const pages = Math.ceil(data.length / pageSize);
   const newData = Array.from({ length: pages }, (_, index) => {
     const start = index * pageSize;

@@ -17,6 +17,8 @@ function App() {
     handlePageChange,
     handlePrevPage,
     handleNextPage,
+    handlePageStart,
+    handlePageEnd,
   } = useAppContext();
 
   console.log(followers);
@@ -48,9 +50,9 @@ function App() {
         })}
       </div>
       <div className="btn-container">
-        {/* <button className="prev-btn--start">
+        <button onClick={handlePageStart} className="prev-btn--start">
           <FiChevronsLeft />
-        </button> */}
+        </button>
         <button onClick={handlePrevPage} className="prev-btn">
           <FiChevronLeft />
         </button>
@@ -68,9 +70,9 @@ function App() {
         <button onClick={handleNextPage} className="next-btn">
           <FiChevronRight />
         </button>
-        {/* <button className="next-btn--end">
+        <button onClick={handlePageEnd} className="next-btn--end">
           <FiChevronsRight />
-        </button> */}
+        </button>
       </div>
     </main>
   );

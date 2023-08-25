@@ -49,7 +49,7 @@ function App() {
           return <Follower key={follower.id} {...follower} />;
         })}
       </div>
-      <div className="btn-container">
+      <div className="btn-container center-container">
         <div onClick={handlePageStart} className="prev-btn--start">
           <FiChevronsLeft />
         </div>

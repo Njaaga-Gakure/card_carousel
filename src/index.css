@@ -343,7 +343,7 @@ main {
   .card:hover {
     transform: translateY(-20px);
   }
-  .card:hover + .card {
+  .card:hover + .card:not(:nth-child(3)) {
     left: 30px;
   }
   .card:not(:first-child) {
